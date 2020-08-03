@@ -4,7 +4,6 @@ let liAmount = document.body. querySelectorAll("li").length;
 function changeColorEverySecond(array, number) {
 	let randomNumber = randomTo(number);
 	array[randomNumber].style.color = changeColor(256);
-	console.log(array[randomNumber].style.color);
 	setTimeout(() => {
 		array[randomNumber].style.color = "";
 		changeColorEverySecond(array, number);
